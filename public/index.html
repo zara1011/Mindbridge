@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MindBridge helps you put difficult thoughts into words and find a manageable next step." />
+  <title>MindBridge — Talk. Think. Connect.</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">MindBridge</a>
+    <span class="privacy">Private by design • AI companion, not a therapist</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">MENTAL WELLBEING</p>
+        <h1>When talking feels hard,<br><span>start here.</span></h1>
+        <p class="intro">A calm AI companion that helps you express what you feel, think through everyday problems, and prepare for conversations with people you trust.</p>
+      </div>
+      <div class="hero-note">
+        <strong>You stay in control.</strong>
+        <p>MindBridge doesn't diagnose or replace human support. It helps you find words and take the next step.</p>
+      </div>
+    </section>
+
+    <section class="app-card" aria-label="MindBridge conversation">
+      <aside class="modes">
+        <p class="mode-title">What do you need?</p>
+        <button class="mode active" data-mode="talk"><span>💬</span><div><b>Talk</b><small>I just need to talk.</small></div></button>
+        <button class="mode" data-mode="say"><span>🗣️</span><div><b>Help me say it</b><small>Find the right words.</small></div></button>
+        <button class="mode" data-mode="think"><span>🧠</span><div><b>Help me think</b><small>Untangle a problem.</small></div></button>
+        <div class="safety-box"><b>If you feel unsafe</b><p>MindBridge will help you focus on getting real-world support rather than trying to handle a crisis alone.</p></div>
+      </aside>
+
+      <section class="chat">
+        <div class="chat-head"><div class="avatar">M</div><div><b>MindBridge</b><small>Here to help you find the next step</small></div><button id="clear" title="Start a new conversation">↻</button></div>
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="bubble ai"><p>Hi. You don't have to know exactly what to say. Start wherever feels easiest.</p><span>MindBridge</span></div>
+        </div>
+        <div class="composer">
+          <textarea id="input" rows="2" maxlength="4000" placeholder="Write what's on your mind..."></textarea>
+          <div class="composer-row"><small>Don't include private passwords or sensitive identifying information.</small><button id="send">Send ↑</button></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="how">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <div class="steps"><div><b>01</b><h3>Express</h3><p>Say it badly. Say it briefly. Just start.</p></div><div><b>02</b><h3>Reflect</h3><p>AI helps organise feelings, facts and options.</p></div><div><b>03</b><h3>Connect</h3><p>When support is needed, turn thoughts into a real conversation.</p></div></div>
+    </section>
+
+    <footer>MindBridge is an educational prototype, not medical advice or an emergency service.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
